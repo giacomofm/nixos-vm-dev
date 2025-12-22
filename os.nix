@@ -6,7 +6,7 @@
   ];
   # system.stateVersion = "25.05";
   # VM
-  virtualisation.vmware.host.enable = true;
+  virtualisation.vmware.guest.enable = true;
   # Boot
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.systemd-boot.enable = true;
@@ -14,7 +14,7 @@
   system.autoUpgrade.channel = "https://channels.nixos.org/nixos-25.05";
   # Network
   networking = {
-    hostName = "vmdevnix";
+    hostName = "vmdev";
     extraHosts = ''
       127.0.0.1 www.sublimetext.com
       127.0.0.1 sublimetext.com
