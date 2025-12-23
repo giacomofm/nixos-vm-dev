@@ -5,6 +5,10 @@
     ./user.nix
   ];
   # system.stateVersion = "25.05";
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
   # VM
   virtualisation.vmware.guest.enable = true;
   # Boot

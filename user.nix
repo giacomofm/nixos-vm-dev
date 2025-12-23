@@ -8,6 +8,19 @@
       javaPackages.compiler.temurin-bin.jdk-25
       jetbrains-toolbox
       google-chrome
+      bruno
     ];
   };
+
+  # Servizio utente: Autostart Toolbox
+  # systemd.user.services.autostart-toolbox = {
+  #   description = "Avvia Jetbrains Toolbox al login utente";
+  #   enable = true;
+  #   wantedBy = ["graphical-session.target"];
+  #   partOf   = ["graphical-session.target"];
+  #   serviceConfig = {
+  #     ExecStart = "${pkgs.jetbrains-toolbox}/bin/jetbrains-toolbox";
+  #     RemainAfterExit = true;
+  #   };
+  # };
 }
