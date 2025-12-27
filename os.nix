@@ -33,7 +33,8 @@
       "openssl-1.1.1w"
     ];
   };
-  programs.firefox.enable = true;
+  programs.appimage.enable = true;
+  programs.firefox.enable = false;
   environment.systemPackages = with pkgs; [
     git
     ffmpeg
